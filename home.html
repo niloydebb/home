@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>axcapita</title>
+    <!--css links-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/property.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--fontawsome-->
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.min.css">
+</head>
+<body>
+<!-- hero section start -->
+<section class="hero">
+   <div class="container-fluid">
+    <div class="row justify-content-center ">
+        <!-- content col start -->
+        <div class="col-md-5 align-items-center my-auto">
+            <div class="hero_content">
+                <h1>Invest in Dubai real estate with AX CAPITAL</h1>
+                <p>We bring Due Diligence at Your service</p>
+                <a href="#">Leave a request</a>
+            </div>
+        </div>
+
+        <!-- form col start -->
+         <div class="offset-md-3 col-md-4">
+            <div class="real-estate-filter mt-5">
+                <ul class="nav nav-tabs justify-content-center" id="propertyTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="primary-tab" data-bs-toggle="tab" data-bs-target="#primary" type="button" role="tab" aria-controls="primary" aria-selected="true">Primary</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="secondary-tab" data-bs-toggle="tab" data-bs-target="#secondary" type="button" role="tab" aria-controls="secondary" aria-selected="false">Secondary</button>
+                  </li>
+                </ul>
+            
+                <div class="tab-content mt-4" id="propertyTabContent">
+                  <div class="tab-pane fade show active" id="primary" role="tabpanel" aria-labelledby="primary-tab">
+                    <!-- Form content for Primary -->
+                    <form>
+                      <div class="mb-3">
+                        <label for="propertyType" class="form-label">Property type</label>
+                        <select class="form-select" id="propertyType">
+                          <option value="villas">Villas</option>
+                          <option value="apartments">Apartments</option>
+                          <option value="houses">Houses</option>
+                        </select>
+                      </div>
+            
+                      <div class="mb-3">
+                        <label for="bedrooms" class="form-label">Bedrooms</label>
+                        <select class="form-select" id="bedrooms">
+                          <option>1 Bedroom</option>
+                          <option>2 Bedrooms</option>
+                          <option>3 Bedrooms</option>
+                        </select>
+                      </div>
+            
+                      <div class="mb-3 d-flex justify-content-between">
+                        <label for="currency" class="form-label">Currency</label>
+                        <div id="currency" class="d-flex">
+                          <span class="currency-option">GBP</span>
+                          <span class="currency-option">CNY</span>
+                          <span class="currency-option">EUR</span>
+                          <span class="currency-option">AED</span>
+                          <span class="currency-option">USD</span>
+                        </div>
+                      </div>
+            
+                      <div class="d-flex mb-4 price_input">
+                        <input type="number" class="form-control me-2" placeholder="Min 4000">
+                        <input type="number" class="form-control" placeholder="Max 150 000 000">
+                      </div>
+            
+                      <button type="submit" class="btn f_submit_btn w-100 mb-2">Show 49 projects</button>
+                      <button type="button" class="btn f_outline_btn w-100">Properties on map</button>
+                    </form>
+                  </div>
+            
+                  <div class="tab-pane fade" id="secondary" role="tabpanel" aria-labelledby="secondary-tab">
+                    <!-- Form content for Secondary (same structure, different options) -->
+                    <form>
+                      <div class="mb-3">
+                        <label for="propertyTypeSecondary" class="form-label">Property type</label>
+                        <select class="form-select" id="propertyTypeSecondary">
+                          <option value="offices">Offices</option>
+                          <option value="shops">Shops</option>
+                          <option value="warehouses">Warehouses</option>
+                        </select>
+                      </div>
+            
+                      <div class="mb-3">
+                        <label for="bedroomsSecondary" class="form-label">Bedrooms</label>
+                        <select class="form-select" id="bedroomsSecondary">
+                          <option>1 Bedroom</option>
+                          <option>2 Bedrooms</option>
+                          <option>3 Bedrooms</option>
+                        </select>
+                      </div>
+            
+                      <div class="mb-3">
+                        <label for="currencySecondary" class="form-label">Currency</label>
+                        <div id="currencySecondary" class="d-flex">
+                          <span class="currency-option">GBP</span>
+                          <span class="currency-option">CNY</span>
+                          <span class="currency-option">EUR</span>
+                          <span class="currency-option">AED</span>
+                          <span class="currency-option">USD</span>
+                        </div>
+                      </div>
+            
+                      <div class="d-flex mb-4">
+                        <input type="number" class="form-control me-2" placeholder="Min 5000">
+                        <input type="number" class="form-control" placeholder="Max 100 000 000">
+                      </div>
+            
+                      <button type="submit" class="btn w-100 mb-2 f_submit_btn">Show 30 projects</button>
+                      <button type="button" class="btn  w-100 f_outline_btn">Properties on map</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+         </div>
+    </div>
+   </div>
+
+</section>
+
+<!-- hero section end -->
+
+
+
+
+   
+<section class="dubai_properties">
+    <div class="container-fluid">
+
+        <!-- heading start -->
+         <div class="dubai_header_content">
+            <h2>EXCLUSIVES</h2>
+            <p>Discover the outstanding range of Dubai properties only with AX CAPITAL</p>
+         </div>
+        <!-- slider start -->
+        <div class="swiper exSwiper">
+            <div class="swiper-wrapper">
+               <!-- single slide start  -->
+              <div class="swiper-slide">
+                <div class="row">
+                    <!-- slider image col start -->
+                    <div class="col-md-4">
+                        <div class="simg_wrapper">
+                            <img src="images/SEkrPeeIie.webp" alt="property" class="img-fluid">
+                            <div class="designation p-6">
+                                <h2 class="name">Azeeza al-Sham</h2>
+                                <p class="con_des">Property Consultant</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- slider image col end -->
+
+                    <!-- slider content col start -->
+                     <div class="col-md-8">
+                        <div class="scontent_wrapper">
+                            <div class="d-flex top_content">
+                               <div class="group">
+                                <h1 class="topcon_head">business spot</h1>
+                                <p>Perfect residence for businessmen and executives</p>
+                               </div>
+                                
+                               <div class="group">
+                                <h1 class="topcon_head">business spot</h1>
+                                <p>Perfect residence for businessmen  and executives</p>
+                               </div>
+                            </div>
+
+                            <div class="d-flex top_content">
+                                <div class="group">
+                                 <h1 class="topcon_head">business spot</h1>
+                                 <p>Perfect residence for businessmen and executives</p>
+                                </div>
+                                 
+                                <div class="group">
+                                 <h1 class="topcon_head">business spot</h1>
+                                 <p>Perfect residence for businessmen  and executives</p>
+                                </div>
+                             </div>
+
+                             <p>Location on Marasi Drive provides quick access to main road arteries. 20-minute walk to Burj Khalifa and the Dubai Mall. Jumeirah Beach and Dubai International Airport are just 15 minutes away.</p>
+                             <p>Handover date: JUNE 30,2024</p>
+                        </div>
+
+                        <!-- slider button start -->
+                        <div class="slider_btn d-flex gap-3">
+                            <div class="slider_single_btn">
+                                <a href="#">learn more</a>
+                            </div>
+    
+                            <div class="slider_single_btn">
+                                <a href="#">learn more</a>
+                           </div>
+                     </div>
+                     <!-- slider content col end -->
+
+                     
+                     </div>
+                </div>
+              </div>
+              <!-- single slide end -->
+              
+
+
+              <!-- single slide start  -->
+              <div class="swiper-slide">
+                <div class="row">
+                    <!-- slider image col start -->
+                    <div class="col-md-4">
+                        <div class="simg_wrapper">
+                            <img src="images/SEkrPeeIie.webp" alt="property" class="img-fluid">
+                            <div class="designation p-6">
+                                <h2 class="name">Azeeza al-Sham</h2>
+                                <p class="con_des">Property Consultant</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- slider image col end -->
+
+                    <!-- slider content col start -->
+                     <div class="col-md-8">
+                        <div class="scontent_wrapper">
+                            <div class="d-flex top_content">
+                               <div class="group">
+                                <h1 class="topcon_head">business spot</h1>
+                                <p>Perfect residence for businessmen  and executives</p>
+                               </div>
+                                
+                               <div class="group">
+                                <h1 class="topcon_head">business spot</h1>
+                                <p>Perfect residence for businessmen and executives</p>
+                               </div>
+                            </div>
+
+                            <div class="d-flex top_content">
+                                <div class="group">
+                                 <h1 class="topcon_head">business spot</h1>
+                                 <p>Perfect residence for businessmen  and executives</p>
+                                </div>
+                                 
+                                <div class="group">
+                                 <h1 class="topcon_head">business spot</h1>
+                                 <p>Perfect residence for businessmen  and executives</p>
+                                </div>
+                             </div>
+
+                             <p>Location on Marasi Drive provides quick access to main road arteries. 20-minute walk to Burj Khalifa and the Dubai Mall. Jumeirah Beach and Dubai International Airport are just 15 minutes away.</p>
+                             <p>Handover date: JUNE 30,2024</p>
+                        </div>
+
+                        <!-- slider button start -->
+                        <div class="slider_btn d-flex gap-3">
+                            <div class="slider_single_btn">
+                                <a href="#">learn more</a>
+                            </div>
+    
+                            <div class="slider_single_btn">
+                                <a href="#">learn more</a>
+                           </div>
+                     </div>
+                     <!-- slider content col end -->
+
+                     
+                     </div>
+                </div>
+              </div>
+              <!-- single slide end -->
+
+
+
+              <!-- single slide start  -->
+              <div class="swiper-slide">
+                <div class="row">
+                    <!-- slider image col start -->
+                    <div class="col-md-4">
+                        <div class="simg_wrapper">
+                            <img src="images/SEkrPeeIie.webp" alt="property" class="img-fluid">
+                            <div class="designation p-6">
+                                <h2 class="name">Azeeza al-Sham</h2>
+                                <p class="con_des">Property Consultant</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- slider image col end -->
+
+                    <!-- slider content col start -->
+                     <div class="col-md-8">
+                        <div class="scontent_wrapper">
+                            <div class="d-flex top_content">
+                               <div class="group">
+                                <h1 class="topcon_head">business spot</h1>
+                                <p>Perfect residence for businessmen and executives</p>
+                               </div>
+                                
+                               <div class="group">
+                                <h1 class="topcon_head">business spot</h1>
+                                <p>Perfect residence for businessmen and executives</p>
+                               </div>
+                            </div>
+
+                            <div class="d-flex top_content">
+                                <div class="group">
+                                 <h1 class="topcon_head">business spot</h1>
+                                 <p>Perfect residence for businessmen and executives</p>
+                                </div>
+                                 
+                                <div class="group">
+                                 <h1 class="topcon_head">business spot</h1>
+                                 <p>Perfect residence for businessmen and executives</p>
+                                </div>
+                             </div>
+
+                             <p>Location on Marasi Drive provides quick access to main road arteries. 20-minute walk to Burj Khalifa and the Dubai Mall. Jumeirah Beach and Dubai International Airport are just 15 minutes away.</p>
+                             <p>Handover date: JUNE 30,2024</p>
+                        </div>
+
+                        <!-- slider button start -->
+                        <div class="slider_btn d-flex gap-3">
+                            <div class="slider_single_btn">
+                                <a href="#">learn more</a>
+                            </div>
+    
+                            <div class="slider_single_btn">
+                                <a href="#">learn more</a>
+                           </div>
+                     </div>
+                     <!-- slider content col end -->
+
+                     
+                     </div>
+                </div>
+              </div>
+              <!-- single slide end -->
+
+              <div #swiperRef="" class="swiper exSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            
+          </div>
+        <!-- slider end -->
+
+        <div class="slider_btn mt-8 d-flex justify-content-between">
+            <div class="sb_prev pro_btn_prev">Prev</div>
+            <div class="sb_next  pro_btn_nxt">Next</div>
+          </div> 
+    </div>
+</section>
+
+
+<!-- buy rent start -->
+   <section class="buy_rent">
+      <div class="container">
+        <div class="row justify-content-center">
+            <!-- left side wrapper -->
+            <div class="col-md-6 align-item-center px-0">
+               <div class="buy_rent_content  text-section mx-auto">
+                <h3 class="buy-option" data-image="buy">BUY <span class="arrow">→</span></h1>
+                    <h3 class="rent-option" data-image="rent">RENT <span class="arrow">→</span></h1>
+                    <p>With a comprehensive portfolio of properties and countless offers, we cover all your real estate needs.</p>
+               </div>
+              </div>
+            <!-- right side wrapper -->
+            <div class="col-md-6 image-section px-0">
+              <img id="image-display" src="images/buy-sell_buy (2).webp" alt="Property" class="img-fluid">
+            </div>
+          </div>
+      </div>
+   </section>
+<!-- buy rent end -->
+
+
+
+<!-- real estate expert section -->
+ <section class="real_state_expert">
+    <div class="container">
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <!-- image wrapper -->
+                 <div class="real_state_expert_img">
+                    <img src="images/real-estate-experts.webp" class="img-fluid" alt="expert">
+                 </div>
+
+                 <!-- content col start -->
+                 
+            </div>
+
+
+            <div class="col-md-8">
+                <div class="real_state_expert_content my-auto align-items-center">
+                    <h4>Real estate experts</h4>
+                    <p>We understand the fact that modern people strive for maximum comfort. 
+
+                        A harmonious environment, communication with professionals, accurate and timely information, commitment, reliable and convenient technological solutions that save the resources that are important to them.
+                        
+                        We have implemented all these in AX CAPITAL</p>
+                     <a href="#">Enquire Now</a>  
+                     
+                     
+                   
+                </div>  
+                
+                <div class="counter d-flex justify-content-around">
+                    <div class="s_counter">
+                        <p>5000+</p>
+                        <span>Offers in the Database</span>
+                    </div>
+
+                    <div class="s_counter">
+                        <p>5000+</p>
+                        <span>Offers in the Database</span>
+                    </div>
+
+                    <div class="s_counter">
+                        <p>5000+</p>
+                        <span>Offers in the Database</span>
+                    </div>
+                 </div> 
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!--experts slider section start -->
+  <section class="expert_slider">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <!-- header content -->
+                <div class="expert_slider_content">
+                    <h2 class="title">Expert Real Estate Insights</h2>
+                    <p>Discover the insider knowledge of Dubai real estate from our agents: expert analysis and in-depth information on the city and its property market.</p>
+                </div>
+                <!-- header content end -->
+                </div>
+
+
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                
+                <!-- slider start  -->
+                   <!-- Swiper -->
+                   <div class="swiper expertSwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- single slider start -->
+                            <div class="swiper-slide">
+                                <div class="expertSlider_wrapper">
+                                    <div class="row">
+                                        <!-- image start -->
+                                        <div class="col-md-5">
+                                            <div class="expertImage_wrapper">
+                                                <img src="images/talk.webp" class="img-fluid" alt="talk">
+                                            </div>
+                                        </div>
+
+                                    <!-- content start -->
+                                        <div class="col-md-7 justify-content-center">
+                                            <div class="expertText_wrapper">
+                                                <h4>AX Blog</h4>
+                                                <p>Stay up to date on the latest trends and developments in the Dubai real estate market with our informative articles. With insights and advice from industry experts, our blog is a valuable resource for anyone interested in the Dubai property market.</p>
+                                                <a href="#">All Articles</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                
+                            </div>
+
+                        <!-- single slider end -->
+
+
+
+
+
+                        <!-- single slider start -->
+                        <div class="swiper-slide">
+                            <div class="expertSlider_wrapper">
+                                <div class="row">
+                                    <!-- image start -->
+                                    <div class="col-md-5">
+                                        <div class="expertImage_wrapper">
+                                            <img src="images/talk.webp" class="img-fluid" alt="talk">
+                                        </div>
+                                    </div>
+
+                                <!-- content start -->
+                                    <div class="col-md-7 justify-content-center">
+                                        <div class="expertText_wrapper">
+                                            <h4>AX Blog</h4>
+                                            <p>Stay up to date on the latest trends and developments in the Dubai real estate market with our informative articles. With insights and advice from industry experts, our blog is a valuable resource for anyone interested in the Dubai property market.</p>
+                                            <a href="#">All Articles</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- single slider end -->
+                </div>
+                
+                </div>
+
+                
+    <!-- slider end -->
+
+     
+            </div>
+        </div>
+
+        
+        <!-- <div class="row">
+            <div class="col-md-4">
+                <div class="pagination_holder">
+                    <div class="swiper-pagination expert_pagination"></div> 
+                </div>
+            </div>
+        </div> -->
+    </div>
+  </section>
+<!-- expert slider section end -->
+
+
+
+
+<!-- review section start -->
+<section class="review_section">
+   <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-3 align-item-center">
+            <div class="title text-center">
+                <h2>reviews</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- review row start -->
+    <div class="swiper reviewSwiper">
+        <div class="swiper-wrapper">
+
+            <!-- single review slider start -->
+          <div class="swiper-slide">
+            <div class="review_wrapper">
+                <div class="top_text">
+                    <h5>Mike Mike</h5>
+                    <p>Ultimate admiration! I wanted to know more about the real estate business in Dubai. God sent me a unique intelligent young lady Yulia Kravchenko, who has undoubtedly the utmost competence in this skill. Very content with an experienced presentation of the topic.</p>
+                </div>
+
+                <div class="star_wrap d-flex justify-content-between">
+                    <div class=" d-flex star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                    </div>
+
+                    <a href="#">
+                        read more
+                    </a>
+                </div>
+            </div>
+          </div>
+             <!-- single rivew slider end -->
+
+
+                 <!-- single review slider start -->
+          <div class="swiper-slide">
+            <div class="review_wrapper">
+                <div class="top_text">
+                    <h5>Mike Mike</h5>
+                    <p>Ultimate admiration! I wanted to know more about the real estate business in Dubai. God sent me a unique intelligent young lady Yulia Kravchenko, who has undoubtedly the utmost competence in this skill. Very content with an experienced presentation of the topic.</p>
+                </div>
+
+                <div class="star_wrap d-flex justify-content-between">
+                    <div class=" d-flex star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                    </div>
+
+                    <a href="#">
+                        read more
+                    </a>
+                </div>
+            </div>
+          </div>
+             <!-- single rivew slider end -->
+
+
+
+
+                 <!-- single review slider start -->
+          <div class="swiper-slide">
+            <div class="review_wrapper">
+                <div class="top_text">
+                    <h5>Mike Mike</h5>
+                    <p>Ultimate admiration! I wanted to know more about the real estate business in Dubai. God sent me a unique intelligent young lady Yulia Kravchenko, who has undoubtedly the utmost competence in this skill. Very content with an experienced presentation of the topic.</p>
+                </div>
+
+                <div class="star_wrap d-flex justify-content-between">
+                    <div class=" d-flex star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                    </div>
+
+                    <a href="#">
+                        read more
+                    </a>
+                </div>
+            </div>
+          </div>
+             <!-- single rivew slider end -->
+
+
+
+                 <!-- single review slider start -->
+          <div class="swiper-slide">
+            <div class="review_wrapper">
+                <div class="top_text">
+                    <h5>Mike Mike</h5>
+                    <p>Ultimate admiration! I wanted to know more about the real estate business in Dubai. God sent me a unique intelligent young lady Yulia Kravchenko, who has undoubtedly the utmost competence in this skill. Very content with an experienced presentation of the topic.</p>
+                </div>
+
+                <div class="star_wrap d-flex justify-content-between">
+                    <div class=" d-flex star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                    </div>
+
+                    <a href="#">
+                        read more
+                    </a>
+                </div>
+            </div>
+          </div>
+             <!-- single rivew slider end -->
+
+
+
+                 <!-- single review slider start -->
+          <div class="swiper-slide">
+            <div class="review_wrapper">
+                <div class="top_text">
+                    <h5>Mike Mike</h5>
+                    <p>Ultimate admiration! I wanted to know more about the real estate business in Dubai. God sent me a unique intelligent young lady Yulia Kravchenko, who has undoubtedly the utmost competence in this skill. Very content with an experienced presentation of the topic.</p>
+                </div>
+
+                <div class="star_wrap d-flex justify-content-between">
+                    <div class=" d-flex star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                        <img src="images/star.png" class="img-fluid" alt="star">
+                    </div>
+
+                    <a href="#">
+                        read more
+                    </a>
+                </div>
+            </div>
+          </div>
+             <!-- single rivew slider end -->
+          
+        </div>
+      
+      </div>
+    
+     <!-- review row end -->
+   </div>
+</section>
+<!-- review section end -->
+
+
+
+<!-- news section start -->
+  <section class="news_section">
+    <div class="container">
+        <!-- title row start -->
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 align-item-center">
+            <div class="title text-center">
+                <h2>News</h2>
+            </div>
+        </div>
+       </div>
+
+
+       <!-- main news start -->
+          <div class="row">
+
+            <!-- left col start -->
+            <div class="col-md-5">
+                <!-- left news start -->
+                  
+                    <!-- image col start -->
+                    
+                       <div class="news_image">
+                        <div class="img_wrapper">
+                            <img src="images/news1.webp" class="img-fluid" alt="news">
+                            <div class="news_img_content">
+                                <h5>Highest Off-plan Towers in Dubai</h5>
+                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                       </div>
+                   
+                  
+                <!-- left news end -->
+            </div>
+
+            <!-- right col start -->
+             <div class="col-md-7">
+              <!-- first row start -->
+                <div class="row">
+                    <div class="r_img_item">
+                        <div class="row">
+                            <!-- image col start -->
+                            <div class="col-5 px-0">
+                                <div class="news_image">
+                                    <div class="img_wrapper lf_img_wrapper">
+                                        <img src="images/news1.webp" class="img-fluid" alt="news">
+                                       
+                                    </div>
+                              </div>
+                            </div>
+        
+                            <!-- title col start -->
+        
+                            <div class="col-7">
+                                <div class="news_img_content">
+                                    <h5>Highest Off-plan Towers in Dubai</h5>
+                                    <a href="#"><i class="fa-solid fa-arrow-right lf"></i></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                       </div>
+                </div>
+
+                <!-- 2nd row start -->
+                
+                    <div class="row mt-2">
+                        <div class="r_img_item">
+                            <div class="row">
+                                <!-- image col start -->
+                                <div class="col-5 px-0">
+                                    <div class="news_image">
+                                        <div class="img_wrapper lf_img_wrapper">
+                                            <img src="images/news1.webp" class="img-fluid" alt="news">
+                                           
+                                        </div>
+                                  </div>
+                                </div>
+            
+                                <!-- title col start -->
+            
+                                <div class="col-7">
+                                    <div class="news_img_content">
+                                        <h5>Highest Off-plan Towers in Dubai</h5>
+                                        <a href="#"><i class="fa-solid fa-arrow-right lf"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                           </div>
+                    </div>
+                 
+               
+             </div>
+
+
+             
+          </div>
+       <!-- main news end -->
+  </section>
+<!-- news section end -->
+
+
+<section class="gallery">
+    <div class="container overflow-hidden">
+        <div class="row justify-content-center">
+            <div class="col-md-5 align-item-center">
+            <div class="title text-center">
+                <h2>Visit our office</h2>
+            </div>
+        </div>
+       </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <!-- Swiper container -->
+              <div class="gallerySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/5.webp" class="img-fluid" alt="gallery">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/6.webp" class="img-fluid" alt="gallery">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/7.webp" class="img-fluid" alt="gallery">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/5.webp" class="img-fluid" alt="gallery">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/7.webp" class="img-fluid" alt="gallery">
+                  </div>
+                </div>
+                
+              
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-4 align-items-center ">
+                <div class="map_view home_map_view text-center">
+                    <a href="#" class="property_map_btn"><i class="fa-solid fa-street-view"></i>properties on map</a>
+                </div>
+              </div>
+          </div>
+    </div>
+</section>
+
+
+
+<!--js links-->
+ <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".exSwiper", {
+        slidesPerView: 1.2,
+        
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".expert_pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".pro_btn_nxt",
+        prevEl: ".pro_btn_prev",
+      },
+    });
+
+
+    var swiper = new Swiper(".expertSwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+    var swiper = new Swiper(".reviewSwiper", {
+      slidesPerView: 4,
+      spaceBetween: 25,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+
+    // var mySwiper = new Swiper('.swiper-container', {
+    //   spaceBetween: 0,
+    //   slidesPerView: 3,
+    //   centeredSlides: true,
+    //   roundLengths: true,
+    //   loop: true,
+    //   loopAdditionalSlides: 30,
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev'
+    //   }
+    // });
+
+
+
+    var swiper = new Swiper(".gallerySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        initialSlide: 3,
+        speed: 600,
+        preventClicks: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true,
+        },
+        on: {
+        click(event) {
+        swiper.slideTo(this.clickedIndex);
+        },
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        },
+        });
+
+
+//   buy sell section
+
+const buyOption = document.querySelector('.buy-option');
+const rentOption = document.querySelector('.rent-option');
+const imageDisplay = document.getElementById('image-display');
+
+
+
+// Set initial active state to "buy"
+buyOption.classList.add('active');
+
+// Function to update the active state and change image
+function updateActive(option, imageSrc) {
+  // Remove active class from both options
+  buyOption.classList.remove('active');
+  rentOption.classList.remove('active');
+  
+  // Add active class to the selected option
+  option.classList.add('active');
+
+  // Fade out image, change source, then fade back in
+  imageDisplay.classList.add('hidden');
+  setTimeout(() => {
+    imageDisplay.src = imageSrc;
+    imageDisplay.classList.remove('hidden');
+  }, 300);
+}
+
+// Change image and active state on hover
+buyOption.addEventListener('mouseenter', function() {
+  updateActive(buyOption, 'images/buy-sell_buy (2).webp');
+});
+
+rentOption.addEventListener('mouseenter', function() {
+  updateActive(rentOption, 'images/buy-sell_rent.webp');
+});
+
+// Change image on hover
+// buyOption.addEventListener('mouseenter', function() {
+//   imageDisplay.classList.add('hidden');
+//   setTimeout(() => {
+//     imageDisplay.src = 'images/buy-sell_buy (2).webp';
+//     imageDisplay.classList.remove('hidden');
+//   }, 300);
+// });
+
+// rentOption.addEventListener('mouseenter', function() {
+//   imageDisplay.classList.add('hidden');
+//   setTimeout(() => {
+//     imageDisplay.src = 'images/buy-sell_rent.webp';
+//     imageDisplay.classList.remove('hidden');
+//   }, 300);
+// });
+
+  
+  </script>
+</body>
+</html>
